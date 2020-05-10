@@ -7,13 +7,22 @@
 //Return true if and only if the nodes corresponding to the values x and y are cousins.
 //
 //Input: root = [1,2,3,4], x = 4, y = 3
+//               1
+//             2  3
+//            4
 //Output: false
 //
 //Input: root = [1,2,3,null,4,null,5], x = 5, y = 4
+//                  1
+//                2   3
+//                 4    5
 //Output: true
 //
 //Input: root = [1,2,3,null,4], x = 2, y = 3
-//Output: false
+//                  1
+//                2   3
+//                 4
+//Output: false 
 //
 //Note:
 //
@@ -39,10 +48,7 @@
 
 class ParentNode {
     TreeNode parent;
-    int depth;
-    
-    
-    
+    int depth;    
 }
 class Solution {
         
