@@ -24,7 +24,7 @@ class Solution {
         List<int[]> result = new ArrayList<>();
         int i = 0;
         int j = 0;
-        int k = 0;
+        
         while(i <  A.length && j < B.length)
         {     
             int x = Math.max(A[i][0],B[j][0]);
@@ -35,6 +35,7 @@ class Solution {
                 add[0]=x;
                 add[1]=y;
                 result.add(add);
+                // result.add(new int[] {x,y});
                 
             }
             
@@ -44,6 +45,7 @@ class Solution {
                 i++;
             
         }
+        // return result.toArray(new int[result.size()][]);
         int[][] res = new int[result.size()][2];
         result.toArray(res);
         return res;
